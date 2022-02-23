@@ -1,0 +1,770 @@
+@charset "UTF-8";
+/*-----ローディング画面のためのCSS -----*/
+/*========= 画面遷移のためのCSS ========*/
+/*画面遷移アニメーション*/
+.splashbg {
+  display: none;
+}
+
+/*bodyにappearクラスがついたら出現*/
+/*bodyにappearクラスがついたら出現*/
+body {
+  background-color: #f7f6f4;
+  color: #000;
+  font-size: 16px;
+  font-family: "Lato" "DM Serif Display", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック", "Yu Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-image: url(../images/bg-image.png);
+}
+
+.top-image {
+  margin-bottom: 150px;
+}
+
+header {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  margin: 30px 0 0 20px;
+}
+
+header .pc-nav {
+  margin: 30px 50px 0 50px;
+}
+
+header .pc-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 760px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+header .pc-nav ul a {
+  height: 25px;
+  text-decoration: none;
+  color: #BFBFBF;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.15em;
+}
+
+header .pc-nav ul .navi::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #BFBFBF;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+header .pc-nav ul .navi:hover::after {
+  width: 100%;
+}
+
+header .pc-nav ul .reserve a {
+  display: block;
+  position: relative;
+  font-family: lato;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+  transition: 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+  background-color: #b99877;
+  border-radius: 50px;
+  margin-top: -20px;
+  color: #FFF;
+}
+
+header .pc-nav ul .reserve a:hover {
+  color: #b99877;
+  background-color: #FFF;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+
+.top {
+  font-size: 40px;
+  color: #fff;
+}
+
+#about header .navi, #party header .navi {
+  color: #000;
+}
+
+#about header .navi::after, #party header .navi::after {
+  background-color: #000;
+}
+
+#about header .reserve a:hover, #party header .reserve a:hover {
+  color: #b99877;
+}
+
+/*  　ロゴ　 */
+.pc-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.responsive-logo {
+  display: none;
+}
+
+/* ハンバーガーボタン */
+.hamburger-button {
+  display: none;
+}
+
+main {
+  margin-bottom: 150px;
+}
+
+main p {
+  line-height: 1.5;
+}
+
+main h2 {
+  font-family: 'DM Serif Display';
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+main .letter {
+  line-height: 30px;
+}
+
+footer {
+  color: #fff;
+  background-color: #22201F;
+}
+
+footer .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer img {
+  width: 60%;
+  height: 450px;
+  margin-top: -60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer h3 {
+  font-family: 'DM Serif Display';
+  height: 130px;
+  background-color: #b99877;
+  font-size: 40px;
+  line-height: 130px;
+  padding-left: 60px;
+}
+
+footer .footer-contents {
+  height: 500px;
+}
+
+footer .footer-contents .left {
+  padding: 70px 0 170px 60px;
+}
+
+footer .footer-contents .left p {
+  margin-bottom: 30px;
+}
+
+footer .footer-contents .left .line {
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+footer .footer-contents .left .phone {
+  font-family: 'DM Serif Display';
+  width: 230px;
+  font-size: 30px;
+  border-bottom: 1px solid #fff;
+}
+
+footer .footer-contents .left .time {
+  margin-top: 40px;
+}
+
+footer .footer-contents .left .time .st {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 20px 15px 0;
+}
+
+footer .footer-contents .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #4e4d4c;
+  margin: -30px 100px 0 100px;
+}
+
+footer .footer-contents .footer-bottom .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-contents .footer-bottom .sns p {
+  margin-right: 20px;
+}
+
+footer .footer-contents .footer-bottom .sns a {
+  font-size: 20px;
+  margin: -4px 8px;
+  color: #4e4d4c;
+}
+
+#home .firstview {
+  margin-bottom: 150px;
+  position: relative;
+}
+
+#home .firstview video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#home .firstview .firstview-contents {
+  font-family: 'DM Serif Display';
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  letter-spacing: 3px;
+}
+
+#home .firstview .scroll {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  color: #fff;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways;
+  font-family: DM Serif Display;
+}
+
+#home header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#home main h1 {
+  padding-left: 1em;
+  text-indent: -0.5em;
+  font-family: 'DM Serif Display';
+  font-size: 90px;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+#home main h1::before {
+  content: "“";
+  color: #b99877;
+  margin-right: 10px;
+}
+
+#home main a {
+  text-decoration: none;
+}
+
+#home main a p {
+  display: block;
+  position: relative;
+  font-family: lato;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+  transition: 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+#home main a p:hover {
+  background-color: #fff;
+  color: black;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#home main .top1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+#home main .top1 img {
+  width: 55%;
+  height: auto;
+  margin-top: 150px;
+}
+
+#home main .top1 .right {
+  margin: 0 auto;
+}
+
+#home main .top1 .right img {
+  width: 530px;
+  height: auto;
+  margin: -20px auto 80px auto;
+}
+
+#home main .top1 .right .box {
+  width: 450px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home main .top2, #home main .top3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 120px;
+}
+
+#home main .top2 img, #home main .top3 img {
+  width: 65%;
+  height: auto;
+}
+
+#home main .top2 .box {
+  width: 480px;
+  margin: 120px 100px 0 100px;
+}
+
+#home main .top3 .box {
+  width: 480px;
+  margin: 120px 100px 0 100px;
+}
+
+#about .top-image img {
+  width: 100%;
+  height: auto;
+}
+
+#about section {
+  margin-bottom: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about section img {
+  width: 55%;
+  height: auto;
+}
+
+#about section .box1 {
+  width: 500px;
+  margin: 150px auto 0 auto;
+}
+
+#about section .box2 {
+  width: 480px;
+  margin: 150px 100px 0 100px;
+}
+
+#about section .box2 p {
+  margin-bottom: 30px;
+}
+
+#about .bottom-image img {
+  width: 100%;
+  height: auto;
+}
+
+#party .top-image img {
+  width: 100%;
+  height: auto;
+}
+
+#party .bottom-image img {
+  width: 100%;
+  height: auto;
+}
+
+#party .topic {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 260px auto;
+}
+
+#party .topic h2 {
+  padding-left: 1em;
+  text-indent: -0.5em;
+  margin-top: 30px;
+}
+
+#party .topic h2::before {
+  content: "“";
+  color: #b99877;
+  margin-right: 10px;
+}
+
+#party .topic .box {
+  width: 650px;
+}
+
+#party .topic .box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+#party .wrap {
+  width: 1300px;
+  margin: 0 auto 80px auto;
+  background-color: #f2ede9;
+  position: relative;
+}
+
+#party .wrap h2 {
+  font-size: 80px;
+  position: absolute;
+  top: -55px;
+  left: 130px;
+}
+
+#party .wrap .wrap-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 100px 50px 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#party section {
+  width: 450px;
+  height: 700px;
+}
+
+#party section .sample1 {
+  overflow: hidden;
+  position: relative;
+  /* 相対位置指定 */
+  margin-bottom: 30px;
+}
+
+#party section .sample1 .caption {
+  font-size: 130%;
+  text-align: center;
+  padding-top: 50%;
+  color: #fff;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  letter-spacing: 0.15em;
+}
+
+#party section .sample1 .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* 絶対位置指定 */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#party section .sample1:hover .mask {
+  opacity: 1;
+  /* マスクを表示する */
+}
+
+#party section h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: DM Serif Display;
+  letter-spacing: 1.5px;
+}
+
+#party section .price {
+  margin-right: 60px;
+}
+
+#party section ul {
+  list-style-position: inside;
+  padding-left: 2em;
+}
+
+#party section li {
+  line-height: 2.5;
+  color: #b99877;
+}
+
+#party section span {
+  color: #000;
+}
+
+#party .info {
+  background: #fff;
+  margin: 0 auto 10%;
+  width: 1140px;
+  padding: 5% 10% 6%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#party .info table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#party .info table tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#party .info table th {
+  width: 30%;
+  border-bottom: 2px solid #f2ede9;
+  padding: 20px 0;
+  color: #333;
+}
+
+#party .info table .middle1 {
+  vertical-align: middle;
+}
+
+#party .info table .middle2 {
+  padding: 20px 0;
+}
+
+#party .info table td {
+  width: 70%;
+  border-bottom: 2px solid #f2ede9;
+  display: table-cell;
+  vertical-align: inherit;
+  line-height: 30px;
+  color: #333;
+}
+
+/*==== ローディング画面のためのCSS ====*/
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #BD9F77;
+  z-index: 9999999;
+  text-align: center;
+  color: #fff;
+}
+
+#splash-logo {
+  font-family: DM Serif Display;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/*==== 画面遷移のためのCSS ===*/
+body.appear .splashbg {
+  display: block;
+  content: "";
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: #BD9F77;
+  /*伸びる背景色の設定*/
+  -webkit-animation-name: PageAnime;
+          animation-name: PageAnime;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes PageAnime {
+  0% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50.001% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes PageAnime {
+  0% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50.001% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+#container {
+  opacity: 0;
+  /*はじめは透過0に*/
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear #container {
+  -webkit-animation-name: PageAnimeAppear;
+          animation-name: PageAnimeAppear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

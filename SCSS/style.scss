@@ -1,0 +1,503 @@
+@import'settings.scss';
+
+//-------------------------
+//    全体構造
+//-------------------------
+body{
+  background-color: $base-color;
+  color: #000;
+  font-size:16px ;
+  font-family: 'Lato''DM Serif Display','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  background-image: url(../images/bg-image.png);
+}
+.top-image{
+  margin-bottom: 150px;
+}
+//-------------------------
+//    ヘッダー
+//-------------------------
+header{
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  img{
+    margin: 30px 0 0 20px;
+  }
+  .pc-nav{
+    margin:30px 50px 0 50px;
+    }
+  .pc-nav ul{
+  @include row;
+  width: 760px;
+    margin-top: 30px;
+    font-size: 15px;
+    a{
+    height: 25px;
+    text-decoration: none;
+    color: #BFBFBF;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.15em;
+    }
+    .navi::after{
+    @include hover-line;
+    }
+    .navi:hover::after{
+    width: 100%;
+    }
+    .reserve a{
+    @include buttun;
+    background-color: $accect-color;
+    border-radius: 50px;
+    margin-top: -20px;
+    color: #FFF;
+    &:hover{
+      color: #b99877;
+    background-color: #FFF;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+
+.top{
+  font-size: 40px;
+  color: #fff;
+}
+
+#about header,#party header {
+  .navi{
+    color: #000;
+    &::after{
+      background-color:#000;
+    }
+  }
+  .reserve a:hover{
+  color: #b99877;
+  }
+}
+/*  　ロゴ　 */
+.pc-logo{
+  display: flex;
+}
+.responsive-logo{
+  display: none;
+}
+
+/* ハンバーガーボタン */
+  .hamburger-button {
+    display: none;
+  }
+
+//-------------------------
+//    メイン
+//-------------------------
+
+main{
+  margin-bottom: 150px;
+  p{
+    line-height:1.5 ;
+  }
+  h2{
+    font-family:'DM Serif Display' ;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .letter{
+    line-height: 30px;
+  }
+}
+
+//-------------------------
+//    フッター
+//-------------------------
+footer{
+  color: #fff;
+  background-color: #22201F;
+.footer-wrap{
+  display: flex;
+  justify-content: space-between;
+  }
+img{
+  width: 60%;
+  height: 450px;
+  margin-top: -60px;
+  object-fit: cover;
+  }
+  h3{
+    @include h3;
+  }
+  .footer-contents{
+    height: 500px;
+  .left{
+    padding: 70px 0 170px 60px;
+    p{
+      margin-bottom: 30px;
+    }
+    .line{
+      border:1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 30px;
+    }
+    .phone{
+      font-family:'DM Serif Display' ;
+      width: 230px;
+      font-size: 30px;
+      border-bottom: 1px solid #fff;
+    }
+    .time{
+      margin-top: 40px;
+      .st{
+        background-color: #fff;
+        color: #000;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin: 0 20px 15px 0;
+      }
+    }
+  }
+    .footer-bottom{
+      @include row;
+    color: #4e4d4c;
+    margin: -30px 100px 0 100px;
+      .sns{
+        @include row;
+        p{
+          margin-right: 20px;
+        }
+        a{
+          font-size: 20px;
+          margin: -4px 8px;
+          color: #4e4d4c;
+        }
+      }
+    }
+  }
+}
+
+//-------------------------
+//    トップページ
+//-------------------------
+
+//---------ファーストビュー---------
+#home {
+.firstview{
+  margin-bottom: 150px;
+  position: relative;
+  video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .firstview-contents{
+    font-family:'DM Serif Display' ;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    letter-spacing: 3px;
+  }
+  .scroll{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-family: DM Serif Display;
+  }
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+//-------- メイン領域---------
+main{
+  h1{
+    @include quote;
+    font-family:'DM Serif Display' ;
+    font-size: 90px;
+    width: 1300px;
+    margin: 0 auto;
+  }
+  a{
+    text-decoration: none;
+   p{
+    @include buttun;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 50px;
+    &:hover{
+      background-color:#fff ;
+      color: black;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      text-decoration: none;
+      }
+    }
+  }
+
+  .top1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    img{
+      width: 55%;
+      height: auto;
+      margin-top: 150px;
+    }
+    .right{
+      margin: 0 auto;
+      img{
+        width: 530px;
+        height: auto;
+        margin: -20px auto 80px auto;
+      }
+      .box{
+        width: 450px;
+        margin: 0 auto;
+        align-items: center;
+      }
+    }
+  }
+  .top2 ,.top3{
+    display: flex;
+    margin-bottom: 120px;
+    img{
+      width: 65%;
+      height: auto;
+    }
+  }
+  .top2 .box{
+    width: 480px;
+    margin: 120px 100px 0 100px;
+  }
+  .top3 .box{
+    width: 480px;
+    margin: 120px 100px 0 100px;
+  }
+}
+}
+
+//-------------------------
+//    アバウトページ
+//-------------------------
+#about {
+  .top-image img{
+    width: 100%;
+    height: auto;
+  } 
+  section{
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+    img{
+      width: 55%;
+      height: auto;
+    }
+    .box1{
+      width: 500px;
+      margin: 150px auto 0 auto;
+    }
+    .box2{
+      width: 480px;
+      margin: 150px 100px 0 100px;
+      p{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .bottom-image img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+//-------------------------
+//    パーティーページ
+//-------------------------
+#party {
+  .top-image img{
+    width: 100%;
+    height: auto;
+  }
+  .bottom-image img{
+    width: 100%;
+    height: auto;
+  }
+
+.topic{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 260px auto;
+  h2{
+    @include quote;
+    margin-top: 30px;
+  }
+  .box{
+    width: 650px;
+    h3{
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.wrap{
+  width: 1300px;
+  margin: 0 auto 80px auto;
+  background-color:#f2ede9 ;
+  position: relative;
+  h2{
+  font-size:80px ;
+  position: absolute;
+  top: -55px;
+  left: 130px;
+  }
+  .wrap-inside{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 100px 50px 100px;
+    justify-content: space-between;
+  }
+}
+section{
+  width: 450px;
+  height: 700px;
+  .sample1 {
+    overflow:hidden;
+    position:relative;	/* 相対位置指定 */
+    margin-bottom: 30px
+  }
+  .sample1 .caption {
+    @include caption;
+    }
+  .sample1 .mask {
+    @include mask;
+    }
+  .sample1:hover .mask {
+    opacity:		1;	/* マスクを表示する */
+  }
+
+h3{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: DM Serif Display;
+  letter-spacing: 1.5px;
+}
+.price{
+  margin-right: 60px;
+}
+ul{
+  list-style-position: inside;
+  padding-left: 2em;
+}
+li{
+  line-height: 2.5;
+  color: $accect-color;
+}
+span{
+  color: #000;
+}
+}
+.info{
+  background: #fff;
+  margin: 0 auto 10%;
+  width: 1140px;
+  padding: 5% 10% 6%;
+  box-sizing: border-box;
+  table{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    tr{
+      display: table-row;
+      vertical-align: inherit;
+      border-color:inherit ;
+    }
+    th{
+      width: 30%;
+      border-bottom: 2px solid $square-color;
+      padding: 20px 0;
+      color: #333;
+    }
+    .middle1{
+      vertical-align: middle;
+    }
+    .middle2{
+      padding: 20px 0;
+    }
+    td{
+      width: 70%;
+      border-bottom: 2px solid $square-color;
+      display: table-cell;
+      vertical-align: inherit;
+      line-height: 30px;
+      color: #333;
+      }
+    }
+  }
+}
+//-------------------------
+//    画面遷移
+//-------------------------
+/*==== ローディング画面のためのCSS ====*/
+#splash{
+  @include splash;
+}
+#splash-logo{
+  @include splash-logo;
+}
+/*==== 画面遷移のためのCSS ===*/
+body.appear .splashbg{
+  @include appear1;
+}
+@keyframes PageAnime{
+	0% {
+		transform-origin:left;
+		transform:scaleX(0);
+	}
+	50% {
+		transform-origin:left;
+		transform:scaleX(1);
+	}
+	50.001% {
+		transform-origin:right;
+	}
+	100% {
+		transform-origin:right;
+		transform:scaleX(0);
+	}
+}
+/*画面遷移の後現れるコンテンツ設定*/
+#container{
+	opacity: 0;/*はじめは透過0に*/
+}
+/*bodyにappearクラスがついたら出現*/
+body.appear #container{
+@include appear2;
+}
+@keyframes PageAnimeAppear{
+	0% {
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+}
+}

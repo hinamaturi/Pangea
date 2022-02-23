@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リザベーション｜Pangea</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/hamburger-menu.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/hamburger-menu.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/bf43891ca6.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="home">
+  <div class="page">
+    <header>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="パンゲア" class="pc-logo"><img
+            src="images/logo-black.png" alt="パンゲア" class="responsive-logo"></a></div>
+      <!-- -----PC用ナビゲーション----- -->
+      <nav class="pc-nav">
+        <ul>
+          <li><a class="navi" href="index.html">HOME</a></li>
+          <li><a class="navi" href="about.html">ABOUT</a></li>
+          <li><a class="navi" href="menu.html">MENU</a></li>
+          <li><a class="navi" href="party.html">PARTY</a></li>
+          <li><a class="navi" href="access.html">ACCESS</a></li>
+          <li><a class="navi" href="online-store.html">ONLINE STORE</a></li>
+          <li class="reserve"><a href="reserve.html">RSERVATIONS</a></li>
+        </ul>
+      </nav>
+
+      <!-------スマホ用ナビゲーション------->
+      <!-- ハンバーガーメニュー -->
+      <button class="hamburger-button"></button>
+
+      <!-- ナビゲーション -->
+      <nav class="hamburger-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="party.html">PARTY</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+          <li><a href="online-store.html">ONLINE STORE</a></li>
+          <li class="reserve"><a href="reserve.html">RSERVATIONS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="firstview">
+      <video id="bg-video" src="images/top-video.mp4" poster="images/top-image.jpg" preload="auto" autoplay
+        loop></video>
+      <div class="firstview-contents">
+        <p>Eat,Drink and<br>
+          Feels like We're travelers.</p>
+      </div>
+    </div>
+
+    <main>
+      <h2>reservation page</h2>
+    </main>
+
+    <footer>
+      <h3>Make a reservation</h3>
+      <div class="footer-contents">
+        <div class="footer-wrap">
+          <div class="left">
+            <p>ご予約・お問い合わせはこちら</p>
+            <p class="phone">Tel.0287-74-5170</p>
+            <a href="#" class="line">LINEで予約する</a>
+            <div class="time">
+              <span class="st">OPEN</span>
+              <span>17:00-24:00(L.O.23:00)</span><br>
+              <span class="st">CLOSE</span>
+              <span>MONDAY</span>
+            </div>
+          </div>
+          <img src="images/footer-image.jpg" alt="ワイングラス">
+        </div>
+        <div class="footer-bottom">
+          <p><small>&copy; Bandito e Pirata All Rights Reserved.</small></p>
+          <div class="sns">
+            <p>Follow Us:</p>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+@media screen and (max-width:480px) { 
+// -----ナビゲーション非表示-----
+  header .pc-nav{
+    display: none;
+  }
+
+
+//-------------------------
+//    全体構造
+//-------------------------
+main{
+  margin: 0 20px 100px 20px;
+  .letter{
+    line-height: 23px;
+  }
+}
+img{  
+  max-width: 100%;
+}
+.top-image{
+  margin-bottom: 50px;
+}
+
+
+//-------------------------
+//    ヘッダー
+//-------------------------
+/* -----ハンバーガー----- */
+.hamburger-button path {
+  fill: #fff ;
+}
+#about,#party{
+  .hamburger-button path {
+  fill: #000 ;
+  }
+}
+.hamburger-button {
+  display: flex;
+  background-color: transparent;
+}
+/* -----ナビゲーション----- */
+.hamburger-nav {
+  background-color: #b99877;
+  height: 100vh;
+}
+.hamburger-nav a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+}
+.hamburger-nav ul{
+  margin-top: 100px;
+}
+.hamburger-nav li{
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* --------ロゴ -------　 */
+.logo{
+margin: -20px 0 0 -20px;
+}
+.responsive-logo{
+  display: flex;
+}
+.pc-logo{
+  display: none;
+}
+  
+
+
+//-------------------------
+//    メイン
+//-------------------------
+
+//-------------------------
+//    フッター
+//-------------------------
+footer{
+  h3{
+    padding: 0;
+    text-align: center;
+  }
+  .footer-contents{
+    height: 600px;
+    .footer-wrap{
+      display: block;
+    .left{
+      padding:0 ;
+      margin: 40px;
+      p{
+        margin-bottom: 30px;
+      }
+    }
+    img{
+      height: auto;
+      width: 100%;
+      margin: 0 0 60px 0;
+    }
+  }
+  .footer-bottom{
+    font-size: 12px;
+    margin: 0;
+      .sns{
+        p{
+          margin: 0;
+        }
+        a{
+          margin: -5px 3px;;
+        }
+      }
+    }
+  }
+}
+//-------------------------
+//    トップページ
+//-------------------------
+
+//-------ファーストビュー------
+#home {
+  .firstview{
+    margin-bottom: 50px;
+    .firstview-contents{
+      font-size: 20px;
+      left: 30px;
+    }
+  }
+  main {
+    h1{
+      font-size: 25px;
+      width: auto;
+      margin-bottom: 40px;
+    }
+    h2{
+      font-size: 32px;
+    }
+    .top1{
+      display: block;
+      margin-bottom: 80px;
+      img{
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+      }
+      .right{
+        text-align: right;
+        img{
+          width: 50%;
+          height: auto;
+          margin: -20px 0 0 0;
+        }
+        .box{
+          width: auto;
+          margin: 0 auto;
+          text-align: left;
+        }
+        a p{
+          margin:20px auto 0 auto ;
+        }
+      }
+    }
+    .top2{
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
+    .top3{
+      display: block;
+    }
+    .top2,.top3{
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .box{
+        width: auto;
+        margin:30px 0 80px 0;
+      }
+      a p{
+      margin:20px auto 0 auto ;
+      }
+    }
+  }
+}
+
+
+
+//-------------------------
+//    アバウトページ
+//-------------------------
+#about{
+  .about-top{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .about-bottom{
+    display: block;
+  }
+  section{
+    width: auto;
+    margin:0 auto 80px auto;
+    .box1,.box2{
+      width: auto;
+      margin:0 ;
+      h2{
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      p{
+        margin-bottom: 30px;
+      }
+    }
+      img{
+        width: 70%;
+        margin: 0 auto 0 auto;
+      }
+  }
+}
+
+//-------------------------
+//    パーティーページ
+//-------------------------
+#party{
+  .topic{
+    width: auto;
+    display: block;
+    margin: 0 auto 80px auto;
+    .box{
+      width: auto;
+    }
+    h2{
+      font-size: 32px;
+    }
+  }
+.wrap{
+  width: auto;
+  margin: 0 auto 30px auto;
+  h2{
+    font-size:35px ;
+    top: -20px;
+    left:50px
+  }
+  .wrap-inside{
+    display: block;
+    padding: 70px 0 2% 0;
+  }
+  section{
+    width: 90%;
+    margin: 0 auto 40px auto;
+    height: auto;
+    h3{
+      font-size: 20px;
+    }
+    li{
+      line-height: normal;
+    }
+    .sample1 .caption {
+      padding: 100px 0;
+    }
+  }
+}
+.info{
+  width: auto;
+  padding: 5% 5% 6%;
+  table{
+    tr{
+      font-size: 13px;
+      letter-spacing: -0.04em;
+    }
+  }
+}
+}
+
+
+
+
+}

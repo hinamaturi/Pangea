@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@media screen and (max-width: 480px) {
+  header .pc-nav {
+    display: none;
+  }
+  main {
+    margin: 0 20px 100px 20px;
+  }
+  main .letter {
+    line-height: 23px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .top-image {
+    margin-bottom: 50px;
+  }
+  /* -----ハンバーガー----- */
+  .hamburger-button path {
+    fill: #fff;
+  }
+  #about .hamburger-button path, #party .hamburger-button path {
+    fill: #000;
+  }
+  .hamburger-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+  }
+  /* -----ナビゲーション----- */
+  .hamburger-nav {
+    background-color: #b99877;
+    height: 100vh;
+  }
+  .hamburger-nav a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+  }
+  .hamburger-nav ul {
+    margin-top: 100px;
+  }
+  .hamburger-nav li {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  /* --------ロゴ -------　 */
+  .logo {
+    margin: -20px 0 0 -20px;
+  }
+  .responsive-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pc-logo {
+    display: none;
+  }
+  footer h3 {
+    padding: 0;
+    text-align: center;
+  }
+  footer .footer-contents {
+    height: 600px;
+  }
+  footer .footer-contents .footer-wrap {
+    display: block;
+  }
+  footer .footer-contents .footer-wrap .left {
+    padding: 0;
+    margin: 40px;
+  }
+  footer .footer-contents .footer-wrap .left p {
+    margin-bottom: 30px;
+  }
+  footer .footer-contents .footer-wrap img {
+    height: auto;
+    width: 100%;
+    margin: 0 0 60px 0;
+  }
+  footer .footer-contents .footer-bottom {
+    font-size: 12px;
+    margin: 0;
+  }
+  footer .footer-contents .footer-bottom .sns p {
+    margin: 0;
+  }
+  footer .footer-contents .footer-bottom .sns a {
+    margin: -5px 3px;
+  }
+  #home .firstview {
+    margin-bottom: 50px;
+  }
+  #home .firstview .firstview-contents {
+    font-size: 20px;
+    left: 30px;
+  }
+  #home main h1 {
+    font-size: 25px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+  #home main h2 {
+    font-size: 32px;
+  }
+  #home main .top1 {
+    display: block;
+    margin-bottom: 80px;
+  }
+  #home main .top1 img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #home main .top1 .right {
+    text-align: right;
+  }
+  #home main .top1 .right img {
+    width: 50%;
+    height: auto;
+    margin: -20px 0 0 0;
+  }
+  #home main .top1 .right .box {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+  }
+  #home main .top1 .right a p {
+    margin: 20px auto 0 auto;
+  }
+  #home main .top2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  #home main .top3 {
+    display: block;
+  }
+  #home main .top2 img, #home main .top3 img {
+    width: 100%;
+    height: auto;
+  }
+  #home main .top2 .box, #home main .top3 .box {
+    width: auto;
+    margin: 30px 0 80px 0;
+  }
+  #home main .top2 a p, #home main .top3 a p {
+    margin: 20px auto 0 auto;
+  }
+  #about .about-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #about .about-bottom {
+    display: block;
+  }
+  #about section {
+    width: auto;
+    margin: 0 auto 80px auto;
+  }
+  #about section .box1, #about section .box2 {
+    width: auto;
+    margin: 0;
+  }
+  #about section .box1 h2, #about section .box2 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  #about section .box1 p, #about section .box2 p {
+    margin-bottom: 30px;
+  }
+  #about section img {
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+  #party .topic {
+    width: auto;
+    display: block;
+    margin: 0 auto 80px auto;
+  }
+  #party .topic .box {
+    width: auto;
+  }
+  #party .topic h2 {
+    font-size: 32px;
+  }
+  #party .wrap {
+    width: auto;
+    margin: 0 auto 30px auto;
+  }
+  #party .wrap h2 {
+    font-size: 35px;
+    top: -20px;
+    left: 50px;
+  }
+  #party .wrap .wrap-inside {
+    display: block;
+    padding: 70px 0 2% 0;
+  }
+  #party .wrap section {
+    width: 90%;
+    margin: 0 auto 40px auto;
+    height: auto;
+  }
+  #party .wrap section h3 {
+    font-size: 20px;
+  }
+  #party .wrap section li {
+    line-height: normal;
+  }
+  #party .wrap section .sample1 .caption {
+    padding: 100px 0;
+  }
+  #party .info {
+    width: auto;
+    padding: 5% 5% 6%;
+  }
+  #party .info table tr {
+    font-size: 13px;
+    letter-spacing: -0.04em;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

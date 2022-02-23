@@ -1,0 +1,141 @@
+$main-color:#F2EDE9;
+$accect-color:#b99877;
+$base-color:#f7f6f4;
+$square-color:#f2ede9;
+
+
+@mixin center(){
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin width1300(){
+  width: 1300px;
+  margin: 0 auto;
+}
+
+@mixin row(){
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin buttun(){
+  display: block;
+  position: relative;
+  font-family: lato;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background-color: #000;
+  transition: .4s cubic-bezier(0.37, 0, 0.63, 1);
+}
+@mixin hover-line(){
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #BFBFBF;
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@mixin quote() {
+  padding-left: 1em;
+  text-indent: -0.5em;
+  &::before{
+    content: "“";
+    color: $accect-color;
+    margin-right: 10px;
+  }
+}  
+  @mixin h3(){
+    font-family:'DM Serif Display' ;
+    height: 130px;
+    background-color: $accect-color;
+    font-size: 40px;
+    line-height: 130px;
+    padding-left: 60px;
+  }
+
+// ------party page画像マウスホバー----------
+@mixin caption {
+  font-size:130%;
+  text-align:center;
+  padding-top:50%;
+  color:#fff;
+  font-family: DM Serif Display ;
+  font-size: 25px;
+  letter-spacing: 0.15em;
+}
+
+@mixin mask {
+  width:100%;
+  height:100%;
+  position:absolute;	/* 絶対位置指定 */
+  top:0;
+  left:0;
+  opacity:0;	/* マスクを表示しない */
+  background-color:	rgba(0,0,0,0.4);
+  -webkit-transition:	all 0.2s ease;
+  transition:all 0.2s ease;
+}
+
+/*-----ローディング画面のためのCSS -----*/
+@mixin splash {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #BD9F77;
+	z-index: 9999999;
+	text-align:center;
+	color:#fff;
+}
+@mixin splash-logo {
+  font-family: DM Serif Display;
+  font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*========= 画面遷移のためのCSS ========*/
+/*画面遷移アニメーション*/
+.splashbg{
+  display: none;
+}
+/*bodyにappearクラスがついたら出現*/
+@mixin appear1(){
+  display: block;
+  content: "";
+  position:fixed;
+z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+left: 0;
+  transform: scaleX(0);
+  background-color: #BD9F77;/*伸びる背景色の設定*/
+animation-name:PageAnime;
+animation-duration:1.2s;
+animation-timing-function:ease-in-out;
+animation-fill-mode:forwards;
+}
+/*bodyにappearクラスがついたら出現*/
+@mixin appear2(){
+	animation-name:PageAnimeAppear;
+	animation-duration:1s;
+	animation-delay: 0.8s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+

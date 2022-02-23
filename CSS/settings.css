@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*-----ローディング画面のためのCSS -----*/
+/*========= 画面遷移のためのCSS ========*/
+/*画面遷移アニメーション*/
+.splashbg {
+  display: none;
+}
+
+/*bodyにappearクラスがついたら出現*/
+/*bodyにappearクラスがついたら出現*/
+/*# sourceMappingURL=settings.css.map */
